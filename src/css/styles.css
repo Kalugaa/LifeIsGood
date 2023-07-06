@@ -4,22 +4,13 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('/../node_modules/modern-normalize/modern-normalize.css');
+@import url('/css/reset.css');
+@import url('/css/header.css');
+@import url('/css/sections/hero.css');
+@import url('/css/sections/how-it-works.css');
+@import url('/css/sections/vegetables.css');
+@import url('/css/sections/we-will-call-you.css');
+@import url('/css/footer.css');
+@import url('/css/modal.css');
+@import url('/css/mobile-menu.css');
