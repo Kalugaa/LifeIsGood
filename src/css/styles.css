@@ -14,3 +14,10 @@
 @import url('/css/footer.css');
 @import url('/css/modal.css');
 @import url('/css/mobile-menu.css');
+
+:root {
+  --black-color: #141414;
+  --green-color: #a1c487;
+  --light-green-color: #eaf7e5;
+  --orange-color: #fc8a11;
+}
