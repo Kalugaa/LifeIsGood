@@ -8,6 +8,10 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
+.modal {
+  margin: 20px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -27,8 +31,22 @@
 
 .modal-title {
   display: flex;
-  align-content: space-around;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.modal-title-text {
+}
+
+.form-items-checkbox {
+  width: 100%;
+  height: 119px;
+  background-color: #faf3e7;
+  border-radius: 20px;
+}
+
+.form-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
