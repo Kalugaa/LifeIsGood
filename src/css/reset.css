@@ -56,3 +56,9 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--black-color);
+  background-color: #fff;
+}
