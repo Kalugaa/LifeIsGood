@@ -1,0 +1,105 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal-title">
+      <h1>Your Order</h1>
+      <button type="button" class="modal-btn-close" data-modal-close>
+        <svg class="icon-modal-btn" width="24" height="24">
+          <use href="/images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+
+    <form class="form-modal">
+      <div class="form-items-checkbox">
+        <input
+          class="modal-checkbox visually-hidden"
+          type="checkbox"
+          id="cabbage-basket"
+          name="cabbage-basket"
+          value="true"
+        />
+
+        <label class="modal-label-checkbox" for="cabbage-basket">
+          Cabbage Basket
+        </label>
+        <p>Plant</p>
+        <img scr="./images" alt="Cabbage Basket" />
+      </div>
+
+      <div class="form-items-checkbox">
+        <input
+          class="modal-checkbox visually-hidden"
+          type="checkbox"
+          id="tomato-basket"
+          name="tomato-basket"
+          value="true"
+        />
+
+        <label class="modal-label-checkbox" for="tomato-basket">
+          Tomato Basket
+        </label>
+        <p>Plant</p>
+        <img scr="./images" alt="Tomato Basket" />
+      </div>
+
+      <div class="form-items-checkbox">
+        <input
+          class="modal-checkbox visually-hidden"
+          type="checkbox"
+          id="vegetables-basket"
+          name="vegetables-basket"
+          value="true"
+        />
+
+        <label class="modal-label-checkbox" for="vegetables-basket">
+          Vegetables Basket
+        </label>
+        <p>Plant</p>
+        <img scr="./images" alt="Vegetables Basket" />
+      </div>
+
+      <div class="form-items">
+        <input
+          class="modal-text"
+          id="full-name"
+          type="text"
+          name="full-name"
+          placeholder="Enter full name..."
+        />
+      </div>
+
+      <div class="form-items">
+        <input
+          class="modal-text"
+          id="enter-email"
+          type="email"
+          name="enter-email"
+          placeholder="Enter email..."
+        />
+      </div>
+
+      <div class="form-items">
+        <input
+          class="modal-text"
+          id="card"
+          type="text"
+          name="card"
+          placeholder="Enter card..."
+        />
+      </div>
+
+      <div class="form-items-comment">
+        <textarea
+          class="modal-text-comment"
+          id="user-comment"
+          name="user-comment"
+          placeholder="Enrel comments..."
+        ></textarea>
+      </div>
+
+      <button class="modal-button" type="submit">
+        <span class="modal-btn-txt">Submit</span>
+      </button>
+    </form>
+  </div>
+</div>
