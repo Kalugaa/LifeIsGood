@@ -1,0 +1,39 @@
+.how-it-works {
+  padding: 124px 0 124px 0;
+}
+.how-it-works-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.how-it-works-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+  color: var(--black-color);
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  max-width: 614px;
+}
+.how-it-works-title-box-img {
+  max-width: 410px;
+}
+.how-it-works-text-box {
+}
+.how-it-works-text {
+}
+.how-it-works-content {
+}
+.how-it-works-content-img {
+}
+.how-it-works-content-box {
+}
+.how-it-works-content-title {
+}
+.how-it-works-content-list {
+}
+.how-it-works-content-item {
+}
