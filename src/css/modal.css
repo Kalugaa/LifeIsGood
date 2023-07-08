@@ -139,7 +139,7 @@
 }
 
 /* ------------------------------------------------------ */
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 768px) {
   .modal {
     margin: 40px;
   }
@@ -159,8 +159,9 @@
   .img-girl {
     display: inline;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    width: 444px;
+    bottom: -10px;
+    right: -154px;
   }
   .form-items-checkbox {
     flex-direction: column;
@@ -184,5 +185,7 @@
 
 @media screen and (min-width: 1158px) {
   .img-girl {
+    bottom: 0px;
+    right: 0px;
   }
 }
