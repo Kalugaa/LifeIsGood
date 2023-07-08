@@ -1,4 +1,15 @@
 /* Reset styles */
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans-Regular.ttf);
+  src: url(../fonts/DMSans-Medium.ttf);
+  src: url(../fonts/DMSans-MediumItalic.ttf);
+  src: url(../fonts/DMSans-Italic.ttf);
+  src: url(../fonts/DMSans-Bold.ttf);
+  src: url(../fonts/DMSans-BoldItalic.ttf);
+}
+
 h1,
 h2,
 h3,
