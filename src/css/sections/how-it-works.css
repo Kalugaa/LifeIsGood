@@ -38,12 +38,20 @@
 }
 .how-it-works-content {
   display: flex;
-  gap: 110px;
+  position: relative;
   padding: 80px;
   border-radius: 80px;
   background-color: #faf3e7;
-  background-image: url(/src/img/desktop/hiw-bg.png);
-  justify-content: center;
+  background-image: url(/img/desktop/hiw-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+}
+.how-it-works-content-img {
+  position: absolute;
+  left: 80px;
+  bottom: 0;
 }
 .how-it-works-content-title {
   max-width: 512px;
