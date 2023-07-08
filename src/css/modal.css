@@ -42,6 +42,19 @@
   height: 119px;
   background-color: #faf3e7;
   border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-items-img {
+  /* display: flex;
+  flex-direction: row-reverse; */
+  justify-content: space-between;
+  margin-right: 30px;
+  /*margin-top: 33px;*/
+  margin-bottom: 8px;
 }
 
 .form-item-card {
@@ -82,4 +95,10 @@
   line-height: 18px;
   letter-spacing: -0.56px;
   text-transform: capitalize;
+}
+
+.modal-icon-checkbox {
+  position: absolute;
+  right: 14px;
+  top: 14px;
 }
