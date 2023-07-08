@@ -35,15 +35,27 @@
 }
 
 .cart {
-  all: unset;
-  padding: 13px 0;
-  display: flex;
-  align-items: center;
+  display: none;
+}
+
+.header-mobile-burger {
+  display: none;
 }
 
 @media screen and (min-width: 375px) {
   .container {
     max-width: 365px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-mobile-burger {
+    all: unset;
+    padding: 13px 0;
+  }
+
+  .mobile-burger-icon {
+    fill: #77ac63;
   }
 }
 
@@ -55,6 +67,18 @@
   .header-menu {
     display: flex;
     column-gap: 20px;
+  }
+
+  .cart {
+    all: unset;
+    padding: 13px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .open-cart-icon {
+    fill: transparent;
+    stroke: black;
   }
 }
 
