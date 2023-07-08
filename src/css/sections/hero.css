@@ -1,0 +1,26 @@
+.section-hero {
+  background-color: var(--green-color);
+}
+.container-users-hero {
+  background: black;
+  border: 0.1875em solid white;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+
+  object-fit: cover;
+}
+.title-hero {
+  color: white;
+  font-size: 36px;
+  /* margin: 14px 0 14px 0; */
+  padding: 14px 20px 14px 20px;
+}
+.title-hero-span {
+  color: var(--light-green-color);
+  font-style: italic;
+}
+.paragraph-hero {
+  color: white;
+  padding: 0 20px 14px 20px;
+}
