@@ -14,7 +14,6 @@
   line-height: 50px;
   letter-spacing: -1.92px;
   text-transform: uppercase;
-  color: var(--black-color);
   max-width: 614px;
 }
 .how-it-works-title-box-img {
@@ -26,7 +25,6 @@
   margin-bottom: 124px;
 }
 .how-it-works-text {
-  color: var(--black-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -41,15 +39,14 @@
 .how-it-works-content {
   display: flex;
   gap: 110px;
+  padding: 80px;
+  border-radius: 80px;
+  background-color: #faf3e7;
+  background-image: url(/src/img/desktop/hiw-bg.png);
   justify-content: center;
-}
-.how-it-works-content-img {
-}
-.how-it-works-content-box {
 }
 .how-it-works-content-title {
   max-width: 512px;
-  color: var(--black-color);
   font-size: 40px;
   font-weight: 500;
   line-height: 44px;
@@ -60,6 +57,8 @@
 .how-it-works-content-list {
   display: flex;
   gap: 28px;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
   list-style-type: none;
   counter-reset: myCounter;
@@ -67,7 +66,6 @@
 .how-it-works-content-item {
   position: relative;
   max-width: 289px;
-  color: var(--black-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -80,7 +78,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--black-color);
   background-color: var(--green-color);
   border-radius: 50%;
   display: flex;
