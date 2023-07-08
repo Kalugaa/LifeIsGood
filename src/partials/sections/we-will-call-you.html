@@ -1,14 +1,31 @@
-<section class="container">
-  <div>
-    <h2>Fresh Harvest Box has got you covered</h2>
-    <p>
+<section class="we-will-call-wrapper container" id="we-will-call">
+  <div style="">
+    <h2 class="we-will-call-title">Fresh Harvest Box has got you covered</h2>
+    <p class="we-will-call-subtitle">
       Our boxes are packed with delicious, nutritious vegetables, perfect for
       anyone looking to eat healthier or support local farmers. Order your box
       today and start enjoying the best that nature has to offer!
     </p>
-    <input type="text" name="" id="" />
+    <form class="we-will-call-form">
+      <label class="call-btn" for="callback">
+        <input
+          class="we-will-call-input"
+          type="tel"
+          name="callback"
+          id="callback"
+          placeholder="+380 ()"
+          pattern="((\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4}))"
+          required
+        />
+        <button class="we-will-call-btn" type="submit">Recall</button>
+      </label>
+    </form>
   </div>
-  <div>
-    <img src="/img/mobile/wwcy-girl.png" alt="A girl with broccoli" />
+  <div class="we-will-call-girl">
+    <img
+      srcset="/img/mobile/wwcy-girl@2x.png 2x"
+      src="/img/mobile/wwcy-girl.png"
+      alt="A girl with broccoli"
+    />
   </div>
 </section>
