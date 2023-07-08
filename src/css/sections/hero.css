@@ -1,0 +1,9 @@
+.section-hero {
+  background-color: var(--green-color-hero);
+}
+.container-hero {
+  background-color: #77ac63;
+}
+.title-hero {
+  color: green;
+}
