@@ -153,4 +153,28 @@
     line-height: 3.125rem;
     letter-spacing: -0.12rem;
   }
+  .how-it-works-text-box {
+    margin-bottom: 124px;
+  }
+  .how-it-works-text.first {
+    max-width: 353px;
+  }
+  .how-it-works-text.second {
+    max-width: 294px;
+  }
+  .how-it-works-content {
+    padding: 80px;
+  }
+  .how-it-works-content-img {
+    transform: translate(20px, 77px);
+  }
+  .how-it-works-content-title {
+    max-width: 512px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.1rem;
+  }
+  .how-it-works-content-item {
+    max-width: 289px;
+  }
 }
