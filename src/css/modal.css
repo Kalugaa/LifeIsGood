@@ -189,6 +189,9 @@
 }
 
 @media screen and (min-width: 375px) {
+  .modal {
+    max-width: 365px;
+  }
 }
 
 /* @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -200,6 +203,7 @@
   .modal {
     /* margin: 40px; */
     padding: 40px;
+    max-width: 734px;
   }
 
   .modal-title-text {
