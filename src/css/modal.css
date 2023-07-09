@@ -22,7 +22,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+  padding: 20px;
   overflow: hidden;
 }
 
@@ -97,6 +97,13 @@
   fill: transparent;
   stroke: transparent; */
   opacity: 0;
+}
+
+.icon-btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  stroke: black;
 }
 
 .modal-checkbox:checked + .modal-label-checkbox * {
@@ -192,6 +199,7 @@
 @media screen and (min-width: 768px) {
   .modal {
     /* margin: 40px; */
+    padding: 40px;
   }
 
   .modal-title-text {
@@ -241,6 +249,11 @@
   .modal-checkbox-svg {
     height: 20px;
     width: 20px;
+  }
+
+  .icon-btn-close {
+    width: 28px;
+    height: 28px;
   }
 }
 
