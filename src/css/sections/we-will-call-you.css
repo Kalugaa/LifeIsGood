@@ -1,5 +1,5 @@
 .we-will-call-wrapper {
-  margin-top: 40px;
+  padding-top: 40px;
   padding-bottom: 40px;
   max-width: 375px;
   width: 100%;
@@ -91,24 +91,20 @@
   padding-top: 30px;
   border-radius: 40px;
   background-color: #faf3e7;
-  /* background-image: radial-gradient(
-    circle at 35px 17px,
-    #a1c487b0 3px,
-    transparent 0
-  ); */
   background-image: url(../img/mobile/dot-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 44px 44px;
   margin: auto;
 }
 
-/* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .we-will-call-girl {
-    background-image: url(.../img/mobile/dot-bg@2x.png);
+    background-image: url(../img/mobile/dot-bg@2x.png);
   }
-} */
+}
 
 @media screen and (min-width: 375px) {
   .we-will-call-wrapper {
@@ -142,9 +138,23 @@
     max-width: 355px;
   }
 
+  .we-will-call-form {
+    margin-bottom: 80px;
+  }
+
   .we-will-call-girl {
     max-width: 704px;
+    background-image: url(../img/tablet/dot-bg.png);
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .we-will-call-girl {
+      background-image: url(../img/tablet/dot-bg@2x.png);
+    }
+  }
+
   .we-will-call-girl img {
     display: block;
     margin: auto;
@@ -153,9 +163,11 @@
 
 @media screen and (min-width: 1280px) {
   .we-will-call-wrapper {
-    max-width: 1216px;
+    max-width: 1280px;
     display: flex;
     gap: 77px;
+    padding-top: 60px;
+    padding-bottom: 124px;
   }
 
   .we-will-call-info {
@@ -164,19 +176,34 @@
 
   .we-will-call-title {
     max-width: 614px;
-
     font-size: 48px;
     line-height: 1;
     letter-spacing: -1.92px;
     text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 40px;
   }
 
   .we-will-call-subtitle {
     margin-bottom: 80px;
+    margin-left: 0;
     text-align: left;
   }
 
   .we-will-call-girl {
     max-width: 525px;
+    background-image: url(../img/desktop/dot-bg.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .we-will-call-girl {
+      background-image: url(../img/desktop/dot-bg@2x.png);
+    }
+  }
+
+  .call-btn {
+    margin-left: 0;
   }
 }
