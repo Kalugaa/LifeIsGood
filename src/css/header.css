@@ -74,6 +74,7 @@
     padding: 13px 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .cart:hover .open-cart-icon,
