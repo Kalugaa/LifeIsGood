@@ -1,7 +1,8 @@
 .we-will-call-wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
-  max-width: 428px;
+  max-width: 375px;
+  width: 100%;
 }
 
 .we-will-call-title {
@@ -86,6 +87,7 @@
 .call-btn {
   max-width: 335px;
   display: flex;
+  margin: auto;
   /* flex-direction: row; */
 }
 
@@ -101,4 +103,38 @@
     transparent 0
   );
   background-size: 44px 44px;
+  margin: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .we-will-call-wrapper {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .we-will-call-wrapper {
+    padding-top: 50px;
+    padding-bottom: 85px;
+    max-width: 768px;
+    width: 100%;
+  }
+  .we-will-call-title {
+    max-width: 524px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+  }
+
+  .we-will-call-subtitle {
+    max-width: 499px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+
+  .call-btn {
+    max-width: 355px;
+  }
 }
