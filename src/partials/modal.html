@@ -42,31 +42,14 @@
                 type="checkbox"
                 id="cabbage-basket"
                 name="cabbage-basket"
-                value="true"
               />
-
-              <svg
-                class="modal-icon-checkbox"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M9.90334 5.26336C10.0893 4.98909 10.4624 4.91748 10.7366 5.10343C11.0109 5.28938 11.0825 5.66247 10.8966 5.93675L7.64239 10.7367C7.40438 11.0878 6.88717 11.0878 6.64916 10.7367L5.10343 8.45673C4.91748 8.18245 4.98909 7.80936 5.26336 7.62342C5.53763 7.43747 5.91071 7.50907 6.09666 7.78334L7.14578 9.3308L9.90334 5.26336Z"
-                  fill="#A1C487"
-                />
-                <rect
-                  x="0.75"
-                  y="0.75"
-                  width="14.5"
-                  height="14.5"
-                  rx="3.25"
-                  stroke="#A1C487"
-                  stroke-width="1.5"
-                />
-              </svg>
+              <label class="modal-label-checkbox" for="cabbage-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
 
               <h2 class="modal-card-title" for="cabbage-basket">
                 Cabbage Basket
@@ -75,7 +58,11 @@
             </div>
             <div class="form-items-img">
               <img
-                src="/img/modal/cabbage-mobile.png"
+                srcset="
+                  ./img/modal/cabbage.png    1x,
+                  ./img/modal/cabbage-2x.png 2x
+                "
+                src="/img/modal/cabbage.png"
                 alt="Cabbage Basket"
                 width="94"
                 height="78"
@@ -92,24 +79,13 @@
                 name="tomato-basket"
                 value="true"
               />
-              <svg
-                class="modal-icon-checkbox"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <rect
-                  x="0.75"
-                  y="0.75"
-                  width="14.5"
-                  height="14.5"
-                  rx="3.25"
-                  stroke="#A1C487"
-                  stroke-width="1.5"
-                />
-              </svg>
+              <label class="modal-label-checkbox" for="tomato-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
 
               <h2 class="modal-card-title" for="tomato-basket">
                 Tomato Basket
@@ -118,7 +94,8 @@
             </div>
             <div class="form-items-img">
               <img
-                src="/img/modal/tomato-mobile.png"
+                srcset="/img/modal/tomato.png 1x, /img/modal/tomato-2x.png 2x"
+                src="/img/modal/tomato.png"
                 alt="Tomato Basket"
                 width="94"
                 height="78"
@@ -135,24 +112,13 @@
                 name="vegetables-basket"
                 value="true"
               />
-              <svg
-                class="modal-icon-checkbox"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <rect
-                  x="0.75"
-                  y="0.75"
-                  width="14.5"
-                  height="14.5"
-                  rx="3.25"
-                  stroke="#A1C487"
-                  stroke-width="1.5"
-                />
-              </svg>
+              <label class="modal-label-checkbox" for="vegetables-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
 
               <h2 class="modal-card-title" for="vegetables-basket">
                 Vegetables Basket
@@ -161,7 +127,11 @@
             </div>
             <div class="form-items-img">
               <img
-                src="/img/modal/vegetables-basket-mobile.png"
+                srcset="
+                  /img/modal/vegetables.png    1x,
+                  /img/modal/vegetables-2x.png 2x
+                "
+                src="/img/modal/vegetables.png"
                 alt="Vegetables Basket"
                 width="94"
                 height="78"
@@ -177,6 +147,7 @@
             type="text"
             name="full-name"
             placeholder="Enter full name..."
+            required
           />
         </div>
 
@@ -187,6 +158,8 @@
             type="email"
             name="enter-email"
             placeholder="Enter email..."
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
           />
         </div>
 
@@ -197,6 +170,7 @@
             type="text"
             name="card"
             placeholder="Enter card..."
+            required
           />
         </div>
 
@@ -205,7 +179,7 @@
             class="modal-text-comment"
             id="user-comment"
             name="user-comment"
-            placeholder="Enrel comments..."
+            placeholder="Enter comments..."
           ></textarea>
         </div>
 

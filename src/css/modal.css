@@ -9,7 +9,20 @@
 }
 
 .modal {
-  margin: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 335px;
+  max-width: 891px;
+  width: calc(100% - 40px);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  border-radius: 4px;
+  padding: 72px 24px 24px 24px;
   overflow: hidden;
 }
 
@@ -17,9 +30,13 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 20px;
-  background: #fff;
+  /* background: #fff; */
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01),
     0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02),
     0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03),
@@ -62,6 +79,36 @@
   justify-content: space-between;
 }
 
+.modal-checkbox-svg {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #a1c487;
+  border-radius: 2px;
+  /* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-checkbox {
+  /* fill: currentColor; */
+  /* 
+  fill: transparent;
+  stroke: transparent; */
+  opacity: 0;
+}
+
+.modal-checkbox:checked + .modal-label-checkbox * {
+  opacity: 1;
+}
+
+.modal-label-checkbox {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
 .modal-card-title {
   font-family: DM Sans;
   font-size: 18px;
@@ -102,16 +149,17 @@
   width: 100%;
 }
 
-.form-items-comment {
+.modal-text-comment {
   border-radius: 20px;
   border: 1px solid rgba(20, 20, 20, 0.3);
   height: 132px;
   padding: 14px 24px;
+  width: 100%;
 }
 
 .modal-button {
   border-radius: 100px;
-  background: #fc8a11;
+  background: var(--orange-color);
   max-width: 92px;
   display: inline-flex;
   padding: 12px 24px;
@@ -129,19 +177,27 @@
   text-transform: capitalize;
 }
 
-.modal-icon-checkbox {
-  position: absolute;
-  right: 14px;
-  top: 14px;
-}
 .img-girl {
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+} */
+
 /* ------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .modal {
-    margin: 40px;
+    /* margin: 40px; */
+  }
+
+  .modal-title-text {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.6px;
   }
 
   .form-item-cards {
@@ -181,11 +237,22 @@
     display: block;
     width: 100%;
   }
+
+  .modal-checkbox-svg {
+    height: 20px;
+    width: 20px;
+  }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .img-girl {
     bottom: 0px;
     right: 0px;
+  }
+
+  .modal-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.96px;
   }
 }
