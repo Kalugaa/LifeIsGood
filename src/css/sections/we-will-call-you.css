@@ -1,5 +1,5 @@
 .we-will-call-wrapper {
-  padding-top: 40px;
+  margin-top: 40px;
   padding-bottom: 40px;
   max-width: 375px;
   width: 100%;
@@ -9,8 +9,7 @@
   max-width: 323px;
   color: var(--black-color);
   text-align: center;
-  /* text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1); */
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -26,15 +25,13 @@
   max-width: 321px;
   color: var(--black-color);
   text-align: center;
-  /* text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1); */
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.56px;
   margin: 0 auto 40px;
-  /* margin-right: auto; */
 }
 
 .we-will-call-form {
@@ -43,8 +40,6 @@
 }
 
 .we-will-call-input {
-  /* flex: 1; */
-  /* max-width: 335px; */
   width: 100%;
   height: 48px;
   border: 1px solid #c1bdbd;
@@ -88,7 +83,6 @@
   max-width: 335px;
   display: flex;
   margin: auto;
-  /* flex-direction: row; */
 }
 
 .we-will-call-girl {
@@ -96,15 +90,25 @@
   width: 100%;
   padding-top: 30px;
   border-radius: 40px;
-  background: #faf3e7;
-  background-image: radial-gradient(
+  background-color: #faf3e7;
+  /* background-image: radial-gradient(
     circle at 35px 17px,
     #a1c487b0 3px,
     transparent 0
-  );
+  ); */
+  background-image: url(../img/mobile/dot-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-size: 44px 44px;
   margin: auto;
 }
+
+/* @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .we-will-call-girl {
+    background-image: url(.../img/mobile/dot-bg@2x.png);
+  }
+} */
 
 @media screen and (min-width: 375px) {
   .we-will-call-wrapper {
@@ -136,5 +140,43 @@
 
   .call-btn {
     max-width: 355px;
+  }
+
+  .we-will-call-girl {
+    max-width: 704px;
+  }
+  .we-will-call-girl img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .we-will-call-wrapper {
+    max-width: 1216px;
+    display: flex;
+    gap: 77px;
+  }
+
+  .we-will-call-info {
+    padding-top: 98px;
+  }
+
+  .we-will-call-title {
+    max-width: 614px;
+
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+  }
+
+  .we-will-call-subtitle {
+    margin-bottom: 80px;
+    text-align: left;
+  }
+
+  .we-will-call-girl {
+    max-width: 525px;
   }
 }
