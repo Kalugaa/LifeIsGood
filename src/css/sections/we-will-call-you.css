@@ -7,9 +7,7 @@
 
 .we-will-call-title {
   max-width: 323px;
-  color: var(--black-color);
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -23,9 +21,7 @@
 
 .we-will-call-subtitle {
   max-width: 321px;
-  color: var(--black-color);
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -45,8 +41,6 @@
   border: 1px solid #c1bdbd;
   border-radius: 100px;
   padding-left: 24px;
-  color: #c1bdbd;
-  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -59,12 +53,16 @@
   border: 1px solid #000000;
 }
 
+.we-will-call-input::placeholder {
+  color: #c1bdbd;
+}
+
 .we-will-call-btn {
   margin-left: -50px;
   min-width: 105px;
   height: 48px;
   color: #fff;
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -168,6 +166,7 @@
     gap: 77px;
     padding-top: 60px;
     padding-bottom: 124px;
+    justify-content: space-between;
   }
 
   .we-will-call-info {
@@ -193,6 +192,7 @@
   .we-will-call-girl {
     max-width: 525px;
     background-image: url(../img/desktop/dot-bg.png);
+    margin: 0;
   }
 
   @media (min-device-pixel-ratio: 2),

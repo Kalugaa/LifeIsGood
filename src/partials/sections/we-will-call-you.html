@@ -6,7 +6,7 @@
       anyone looking to eat healthier or support local farmers. Order your box
       today and start enjoying the best that nature has to offer!
     </p>
-    <form class="we-will-call-form">
+    <form class="we-will-call-form" id="callback-form">
       <label class="call-btn" for="callback">
         <input
           class="we-will-call-input"
@@ -17,7 +17,14 @@
           pattern="^\d+"
           required
         />
-        <button class="we-will-call-btn" type="submit">Recall</button>
+        <button
+          class="we-will-call-btn"
+          type="submit"
+          form="callback-form"
+          name="callback-btn"
+        >
+          Recall
+        </button>
       </label>
     </form>
   </div>

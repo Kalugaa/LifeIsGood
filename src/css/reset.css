@@ -103,7 +103,7 @@ img {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans Regular';
   color: var(--black-color);
   background-color: #fff;
 }
