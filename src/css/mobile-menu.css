@@ -2,16 +2,6 @@ header {
 	position: relative;
     z-index: 2;
 }
-/* Гамбургер иконка */
-.mobile-burger-icon {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	z-index:2;
-	overflow: hidden;
-	cursor: pointer;
-}
-
 /* Меню, которое будет появляться */
 .menu {
 	position: fixed;
