@@ -59,7 +59,9 @@
   justify-content: center;
   display: flex;
 }
-
+.image-hero {
+  width: 370px;
+}
 .container-tags-hero {
   padding: 0 20px 20px 142px;
 }
@@ -68,7 +70,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
-  max-width: 375px;
+  max-width: 275px;
   margin-left: auto;
 }
 
@@ -116,13 +118,10 @@
     vertical-align: -37px;
   }
   .image-hero {
-    width: 470px;
+    width: 550px;
   }
   .container-tags-hero {
     padding: 0 32px 32px 522px;
-  }
-  .tags-hero-list {
-    max-width: 768px;
   }
 }
 
@@ -139,10 +138,10 @@
   }
   .title-hero {
     font-size: 56px;
-    padding: 16px 576px 16px 32px;
+    padding: 16px 100px 16px 32px;
   }
   .paragraph-hero {
-    padding: 0 757px 32px 32px;
+    padding: 0 100px 32px 32px;
   }
   .container-hero-btn {
     height: 132px;
@@ -150,26 +149,23 @@
     margin: 0 0 16px 32px;
   }
   .container-image-hero {
-    position: absolute;
-    left: 800px;
-    bottom: 200px;
+    margin: 150px 0 0 0;
   }
   .image-hero {
-    width: 500px;
+    width: 1000px;
   }
   .hero-btn {
     font-size: 28px;
     vertical-align: -50px;
   }
   .tags-hero-list {
-    /* width: 1280px; */
     gap: 8px;
   }
   .container-tags-hero {
-    /* position: absolute;
-    left: 500px;
-    bottom: 50px; */
-
-    padding: 0 32px 32px 982px;
+    padding: 0 32px 32px 140px;
+  }
+  .container-hero {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
