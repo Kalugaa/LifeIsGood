@@ -1,6 +1,6 @@
-<!-- <button type="button" class="hero-button" data-modal-open>
+<button type="button" class="hero-button" data-modal-open>
   <span class="hero-btn-txt">Order Service</span>
-</button> -->
+</button>
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -121,62 +121,62 @@
             </div>
           </div>
         </div>
+        <div class="form-item-input">
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="full-name"
+              type="text"
+              name="full-name"
+              placeholder="Enter full name..."
+              required
+            />
+          </div>
 
-        <div class="form-items">
-          <input
-            class="modal-text"
-            id="full-name"
-            type="text"
-            name="full-name"
-            placeholder="Enter full name..."
-            required
-          />
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="enter-email"
+              type="email"
+              name="enter-email"
+              placeholder="Enter email..."
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+          </div>
+
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="card"
+              type="text"
+              name="card"
+              placeholder="Enter card..."
+              required
+            />
+          </div>
+
+          <div class="form-items-comment">
+            <textarea
+              class="modal-text-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter comments..."
+            ></textarea>
+          </div>
         </div>
-
-        <div class="form-items">
-          <input
-            class="modal-text"
-            id="enter-email"
-            type="email"
-            name="enter-email"
-            placeholder="Enter email..."
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-        </div>
-
-        <div class="form-items">
-          <input
-            class="modal-text"
-            id="card"
-            type="text"
-            name="card"
-            placeholder="Enter card..."
-            required
-          />
-        </div>
-
-        <div class="form-items-comment">
-          <textarea
-            class="modal-text-comment"
-            id="user-comment"
-            name="user-comment"
-            placeholder="Enter comments..."
-          ></textarea>
-        </div>
-
-        <button class="modal-button" type="submit">
-          <span class="modal-btn-txt">Submit</span>
-        </button>
-        <img
-          class="img-girl"
-          srcset="/img/modal/img-girl.png 1x, /img/modal/img-girl-2x.png 2x"
-          src="/img/modal/img-girl.png"
-          alt="Cabbage Basket"
-          width="290"
-          height="403"
-        />
       </div>
+      <button class="modal-button" type="submit">
+        <span class="modal-btn-txt">Submit</span>
+      </button>
+      <img
+        class="img-girl"
+        srcset="/img/modal/img-girl.png 1x, /img/modal/img-girl-2x.png 2x"
+        src="/img/modal/img-girl.png"
+        alt="Cabbage Basket"
+        width="290"
+        height="403"
+      />
     </form>
   </div>
 </div>
