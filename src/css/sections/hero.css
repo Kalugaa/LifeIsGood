@@ -166,9 +166,10 @@
     gap: 8px;
   }
   .container-tags-hero {
-    position: absolute;
-
+    /* position: absolute;
     left: 500px;
-    bottom: 50px;
+    bottom: 50px; */
+
+    padding: 0 32px 32px 982px;
   }
 }
