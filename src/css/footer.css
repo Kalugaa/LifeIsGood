@@ -8,7 +8,7 @@
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
-   
+    gap: 40px;
 }
 .footer-div-item {
    
@@ -17,12 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 40px;
     margin: 0 auto;
+    gap: 20px; 
 }
 .footer-img {
-    margin-bottom: 20px;
     display: flex;
     border-radius: 100px; 
 }
@@ -43,9 +41,10 @@ fill:  #141414;;
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.035em;
     text-transform: uppercase; 
     align-items: center;
+    row-gap: 40px;
 }
 .footer-svg-logo {
    
@@ -57,10 +56,10 @@ fill:  #141414;;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    padding-bottom: 40px;
     width: 100%;
     flex-direction: column;
-
+    margin-top: 40px;
+    
 }
 .footer-menu-list {
     color: #141414;
@@ -70,9 +69,9 @@ fill:  #141414;;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.035em;
     display: flex;
-    gap: 20px;
+    gap: 20px ;
 }
 .footer-item {
 }
@@ -85,14 +84,16 @@ fill:  #141414;;
     fill: var(--green-color);
 }
 .footer-div-soc {
+    display: block;
     justify-content: center;
-    margin-bottom: 40px;
+    
+
 }
 .footer-soc-list {
     display: flex;
-    gap: 20px;
+    gap: 20px ;
     justify-content: center;
-    
+
 }
 .footer-item-soc {
 }
@@ -126,8 +127,7 @@ fill:  #141414;;
     font-weight: 400;
     line-height: 18px;
     display: block;
-    justify-content: center;
-    gap: 20px;
+   
 }
 .footer-tel-linc:hover,
 .footer-tel-linc:focus {
@@ -140,7 +140,7 @@ fill:  #141414;;
 .footer-tel {
 }
 .footer-tel-linc {
-    margin-bottom: 20px;
+    gap: 20px;
 }
 .footer-address-link {
     display: flex;
@@ -148,11 +148,12 @@ fill:  #141414;;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
-   
+
 }
 .foooter-address-poht {
     max-width: 135px;
     height: 54px;
+    margin-top: 20px;
 }
 
 
@@ -218,7 +219,7 @@ fill:  #141414;;
 }
 .footer-tel-linc {
     min-width: 184px;
-    margin-bottom: 20px;
+
 }
 .foooter-address-poht {
     min-width: 173px;
@@ -242,7 +243,7 @@ fill:  #141414;;
     flex-direction: row;
 }
 .footer-logo {
-    display: block;
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -257,10 +258,9 @@ fill:  #141414;;
     
 }
 .footer-div-soc {
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 margin-right: 142px;
 }
 .footer-div-address {
