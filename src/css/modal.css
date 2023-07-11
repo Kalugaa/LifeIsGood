@@ -5,18 +5,19 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(0, 0) scale(0);
 }
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  z-index: 11;
+  transform: translate(0, 0) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 335px;
   max-width: 891px;
   width: calc(100% - 40px);
+
+  margin-top: 50px;
 
   border-radius: 20px;
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01),
@@ -32,6 +33,9 @@
 }
 
 .backdrop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,7 +44,12 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  z-index: 999;
+  z-index: 10;
+
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .modal-btn-close {
