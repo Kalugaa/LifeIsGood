@@ -89,7 +89,7 @@
   padding-top: 30px;
   border-radius: 40px;
   background-color: #faf3e7;
-  background-image: url(../img/mobile/dot-bg.png);
+  background-image: url(/img/mobile/dot-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -100,7 +100,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .we-will-call-girl {
-    background-image: url(../img/mobile/dot-bg@2x.png);
+    background-image: url(/img/mobile/dot-bg@2x.png);
   }
 }
 
@@ -142,14 +142,14 @@
 
   .we-will-call-girl {
     max-width: 704px;
-    background-image: url(../img/tablet/dot-bg.png);
+    background-image: url(/img/tablet/dot-bg.png);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .we-will-call-girl {
-      background-image: url(../img/tablet/dot-bg@2x.png);
+      background-image: url(/img/tablet/dot-bg@2x.png);
     }
   }
 
@@ -191,7 +191,7 @@
 
   .we-will-call-girl {
     max-width: 525px;
-    background-image: url(../img/desktop/dot-bg.png);
+    background-image: url(/img/desktop/dot-bg.png);
     margin: 0;
   }
 
@@ -199,7 +199,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .we-will-call-girl {
-      background-image: url(../img/desktop/dot-bg@2x.png);
+      background-image: url(/img/desktop/dot-bg@2x.png);
     }
   }
 
