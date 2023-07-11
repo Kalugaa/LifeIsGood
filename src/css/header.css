@@ -5,6 +5,7 @@
 .header-container {
   display: flex;
   align-items: center;
+  padding: 13px 0;
 }
 
 .header-menu {
@@ -14,7 +15,7 @@
 .header-menu-link {
   font-size: 14px;
   line-height: 1.28;
-  padding: 16px 0;
+  letter-spacing: -0.04em;
   text-transform: capitalize;
 }
 
@@ -31,6 +32,7 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
+  letter-spacing: -0.04em;
   flex-grow: 1;
 }
 
@@ -71,9 +73,9 @@
 
   .cart {
     all: unset;
-    padding: 13px 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .cart:hover .open-cart-icon,
