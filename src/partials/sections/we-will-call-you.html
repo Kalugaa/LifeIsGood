@@ -1,52 +1,57 @@
-<section class="we-will-call-wrapper container" id="we-will-call">
-  <div class="we-will-call-info">
-    <h2 class="we-will-call-title">Fresh Harvest Box has got you covered</h2>
-    <p class="we-will-call-subtitle">
-      Our boxes are packed with delicious, nutritious vegetables, perfect for
-      anyone looking to eat healthier or support local farmers. Order your box
-      today and start enjoying the best that nature has to offer!
-    </p>
-    <form class="we-will-call-form" id="callback-form">
-      <label class="call-btn" for="callback">
-        <input
-          class="we-will-call-input"
-          type="tel"
-          name="callback"
-          id="callback"
-          placeholder="+380 ()"
-          pattern="^\d+"
-          required
+<section class="we-will-call" id="we-will-call">
+  <div class="container we-will-call-wrapper">
+    <div class="we-will-call-info">
+      <h2 class="we-will-call-title">Fresh Harvest Box has got you covered</h2>
+      <p class="we-will-call-subtitle">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <form class="we-will-call-form" id="callback-form">
+        <label class="call-btn" for="callback">
+          <input
+            class="we-will-call-input"
+            type="tel"
+            name="callback"
+            id="callback"
+            placeholder="+380 ()"
+            pattern="^\d+"
+            required
+          />
+          <button
+            class="we-will-call-btn"
+            type="submit"
+            form="callback-form"
+            name="callback-btn"
+          >
+            Recall
+          </button>
+        </label>
+      </form>
+    </div>
+    <div class="we-will-call-girl">
+      <picture>
+        <source
+          srcset="/img/mobile/wwcy-girl.png 1x, /img/mobile/wwcy-girl@2x.png 2x"
+          media="(max-width:767px)"
         />
-        <button
-          class="we-will-call-btn"
-          type="submit"
-          form="callback-form"
-          name="callback-btn"
-        >
-          Recall
-        </button>
-      </label>
-    </form>
-  </div>
-  <div class="we-will-call-girl">
-    <picture>
-      <source
-        srcset="/img/mobile/wwcy-girl.png 1x, /img/mobile/wwcy-girl@2x.png 2x"
-        media="(max-width:767px)"
-      />
-      <source
-        srcset="/img/tablet/wwcy-girl.png 1x, /img/tablet/wwcy-girl@2x.png 2x"
-        media="(max-width:1279px)"
-      />
-      <source
-        srcset="/img/desktop/wwcy-girl.png 1x, /img/desktop/wwcy-girl@2x.png 2x"
-        media="(min-width:1280px)"
-      />
-      <img
-        srcset="/img/mobile/wwcy-girl.png 1x, /img/mobile/wwcy-girl@2x.png 2x"
-        src="/img/mobile/wwcy-girl.png"
-        alt="A girl with broccoli"
-      />
-    </picture>
+        <source
+          srcset="/img/tablet/wwcy-girl.png 1x, /img/tablet/wwcy-girl@2x.png 2x"
+          media="(max-width:1279px)"
+        />
+        <source
+          srcset="
+            /img/desktop/wwcy-girl.png    1x,
+            /img/desktop/wwcy-girl@2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <img
+          srcset="/img/mobile/wwcy-girl.png 1x, /img/mobile/wwcy-girl@2x.png 2x"
+          src="/img/mobile/wwcy-girl.png"
+          alt="A girl with broccoli"
+        />
+      </picture>
+    </div>
   </div>
 </section>

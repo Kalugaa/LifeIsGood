@@ -1,8 +1,9 @@
-.we-will-call-wrapper {
+.we-will-call {
   padding-top: 40px;
   padding-bottom: 40px;
   max-width: 375px;
   width: 100%;
+  margin: auto;
 }
 
 .we-will-call-title {
@@ -105,18 +106,19 @@
 }
 
 @media screen and (min-width: 375px) {
-  .we-will-call-wrapper {
+  .we-will-call {
     max-width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .we-will-call-wrapper {
+  .we-will-call {
     padding-top: 50px;
     padding-bottom: 85px;
     max-width: 768px;
     width: 100%;
   }
+
   .we-will-call-title {
     max-width: 524px;
     width: 100%;
@@ -160,12 +162,18 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .we-will-call-wrapper {
+  .we-will-call {
     max-width: 1280px;
-    display: flex;
-    gap: 77px;
+    /* display: flex;
+    gap: 77px; */
     padding-top: 60px;
     padding-bottom: 124px;
+    /* justify-content: space-between; */
+  }
+
+  .we-will-call-wrapper {
+    display: flex;
+    gap: 77px;
     justify-content: space-between;
   }
 
