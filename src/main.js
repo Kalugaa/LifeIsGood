@@ -6,3 +6,4 @@ import './js/sections/vegetables';
 import './js/sections/we-will-call-you';
 import './js/footer';
 import './js/modal';
+import './js/go-top';
