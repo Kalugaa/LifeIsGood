@@ -14,6 +14,7 @@
 @import url('/css/footer.css');
 @import url('/css/modal.css');
 @import url('/css/mobile-menu.css');
+@import url('/css/go-top.css');
 
 :root {
   --black-color: #141414;
