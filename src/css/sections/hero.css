@@ -68,6 +68,7 @@
 }
 .container-tags-hero {
   margin: 0px -23px 20px 142px;
+  justify-content: flex-end;
 }
 .tags-hero-list {
   display: flex;
