@@ -147,7 +147,6 @@
   }
   .footer-div {
     display: flex;
-    flex-direction: wrap;
     flex-direction: row;
     flex-wrap: wrap;
   }

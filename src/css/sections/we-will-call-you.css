@@ -36,6 +36,14 @@
 
 .we-will-call-form {
   text-align: center;
+  position: relative;
+}
+
+.we-will-call-form button {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
 }
 
 .we-will-call-input {
@@ -61,7 +69,6 @@
 }
 
 .we-will-call-btn {
-  margin-left: -50px;
   min-width: 105px;
   height: 48px;
   color: #fff;
@@ -132,6 +139,9 @@
     line-height: 1.1;
     letter-spacing: -0.04em;
   }
+  .we-will-call-form button {
+    right: 176px;
+  }
 
   .we-will-call-subtitle {
     max-width: 499px;
@@ -196,6 +206,10 @@
     margin-bottom: 80px;
     margin-left: 0;
     text-align: left;
+  }
+
+  .we-will-call-form button {
+    right: 260px;
   }
 
   .we-will-call-girl {
