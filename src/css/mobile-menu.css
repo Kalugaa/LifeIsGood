@@ -30,7 +30,13 @@ header {
     align-items: center;
     flex-direction: column;
 	gap: 16px;
+	padding: 174px 140px 512px 140px;
 
+}
+.button-mobile-menu {
+	outline: none;
+	border: none;
+	background-color: transparent;
 }
 .mobile-list a {
 	color: #FFF;

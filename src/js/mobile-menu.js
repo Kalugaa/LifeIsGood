@@ -1,5 +1,6 @@
 let menuBtn = document.querySelector('.mobile-burger-icon');
 let menu = document.querySelector('.menu');
+let links = document.querySelectorAll('.mobile-list a');
 
 menuBtn.addEventListener('click', function(){
   menuBtn.classList.toggle('active');
@@ -14,9 +15,22 @@ menuBtn.addEventListener('click', function(){
     document.body.style.overflow = 'hidden'; // Блокировка прокрутки
   } else {
     menuBtn.innerHTML = `
-      <svg class="mobile-burger-icon not-cheked" id="icon" width="24" height="24">
+      <svg class="mobile-burger-icon" id="icon" width="24" height="24">
         <use href="/img/symbol-defs.svg#mobile-burger-icon"></use>
       </svg>`;
     document.body.style.overflow = ''; // Восстановление прокрутки
   }
+});
+
+// Add event listeners to each link
+links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    menuBtn.classList.remove('active');
+    menu.classList.remove('active');
+    menuBtn.innerHTML = `
+      <svg class="mobile-burger-icon" id="icon" width="24" height="24">
+        <use href="/img/symbol-defs.svg#mobile-burger-icon"></use>
+      </svg>`;
+    document.body.style.overflow = ''; // Восстановление прокрутки
+  });
 });
