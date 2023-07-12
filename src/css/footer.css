@@ -64,7 +64,8 @@ fill:  #141414;;
 .footer-menu-list {
     color: #141414;
     text-align: center;
-    font-family: DM Sans;
+    /* font-family: DM Sans; */
+    font-family:  'DM Sans Regular';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
