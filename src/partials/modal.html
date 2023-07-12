@@ -1,0 +1,183 @@
+
+<!-- <button type="button" class="hero-button" data-modal-open>
+  <span class="hero-btn-txt">Order Service</span>
+</button> -->
+
+<div class="backdrop is-hidden" data-first-modal>
+  <div class="modal">
+    <div class="modal-title">
+      <h1 class="modal-title-text">Your Order</h1>
+      <button type="button" class="modal-btn-close" data-first-modal-close>
+        <svg class="icon-btn-close" height="24" width="24">
+          <use href="/img/symbol-defs.svg#close-icon"></use>
+        </svg>
+      </button>
+    </div>
+
+    <form class="form-modal">
+      <div class="form-item">
+        <div class="form-item-cards">
+          <div class="form-items-checkbox">
+            <div class="form-items-title">
+              <input
+                class="modal-checkbox visually-hidden"
+                type="checkbox"
+                id="cabbage-basket"
+                name="cabbage-basket"
+                checked
+              />
+              <label class="modal-label-checkbox" for="cabbage-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
+
+              <h2 class="modal-card-title" for="cabbage-basket">
+                Cabbage Basket
+              </h2>
+              <p>Plant</p>
+            </div>
+            <div class="form-items-img">
+              <img
+                srcset="
+                  ./img/modal/cabbage.png    1x,
+                  ./img/modal/cabbage-2x.png 2x
+                "
+                src="/img/modal/cabbage.png"
+                alt="Cabbage Basket"
+                width="94"
+                height="78"
+              />
+            </div>
+          </div>
+
+          <div class="form-items-checkbox">
+            <div class="form-items-title">
+              <input
+                class="modal-checkbox visually-hidden"
+                type="checkbox"
+                id="tomato-basket"
+                name="tomato-basket"
+                value="true"
+              />
+              <label class="modal-label-checkbox" for="tomato-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
+
+              <h2 class="modal-card-title" for="tomato-basket">
+                Tomato Basket
+              </h2>
+              <p>Plant</p>
+            </div>
+            <div class="form-items-img">
+              <img
+                srcset="/img/modal/tomato.png 1x, /img/modal/tomato-2x.png 2x"
+                src="/img/modal/tomato.png"
+                alt="Tomato Basket"
+                width="94"
+                height="78"
+              />
+            </div>
+          </div>
+
+          <div class="form-items-checkbox">
+            <div class="form-items-title">
+              <input
+                class="modal-checkbox visually-hidden"
+                type="checkbox"
+                id="vegetables-basket"
+                name="vegetables-basket"
+                value="true"
+              />
+              <label class="modal-label-checkbox" for="vegetables-basket">
+                <span class="modal-checkbox-svg">
+                  <svg class="icon-checkbox" height="10" width="10">
+                    <use href="/img/symbol-defs.svg#checkbox-active-icon"></use>
+                  </svg>
+                </span>
+              </label>
+
+              <h2 class="modal-card-title" for="vegetables-basket">
+                Vegetables Basket
+              </h2>
+              <p>Plant</p>
+            </div>
+            <div class="form-items-img">
+              <img
+                srcset="
+                  /img/modal/vegetables.png    1x,
+                  /img/modal/vegetables-2x.png 2x
+                "
+                src="/img/modal/vegetables.png"
+                alt="Vegetables Basket"
+                width="94"
+                height="78"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-item-input">
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="full-name"
+              type="text"
+              name="full-name"
+              placeholder="Enter full name..."
+              required
+            />
+          </div>
+
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="enter-email"
+              type="email"
+              name="enter-email"
+              placeholder="Enter email..."
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+          </div>
+
+          <div class="form-items">
+            <input
+              class="modal-text"
+              id="card"
+              type="text"
+              name="card"
+              placeholder="Enter card..."
+              required
+            />
+          </div>
+
+          <div class="form-items-comment">
+            <textarea
+              class="modal-text-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter comments..."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <button class="modal-button" type="submit">
+        <span class="modal-btn-txt">Submit</span>
+      </button>
+      <img
+        class="img-girl"
+        srcset="/img/modal/img-girl.png 1x, /img/modal/img-girl-2x.png 2x"
+        src="/img/modal/img-girl.png"
+        alt="Cabbage Basket"
+        width="290"
+        height="403"
+      />
+    </form>
+  </div>
+</div>
