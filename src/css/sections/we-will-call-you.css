@@ -1,6 +1,5 @@
 .we-will-call {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 80px 0;
   max-width: 375px;
   width: 100%;
   margin: auto;
@@ -116,8 +115,8 @@
 
 @media screen and (min-width: 768px) {
   .we-will-call {
-    padding-top: 50px;
-    padding-bottom: 85px;
+    padding-top: 100px;
+    padding-bottom: 173px;
     max-width: 768px;
     width: 100%;
   }
