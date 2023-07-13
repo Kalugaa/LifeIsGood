@@ -81,7 +81,8 @@
   width: 370px;
 }
 .container-tags-hero {
-  margin: 0px -23px 20px 142px;
+  /* margin: 0px 0px 0 142px; */
+  display: flex;
   justify-content: flex-end;
 }
 .tags-hero-list {
@@ -91,6 +92,8 @@
   gap: 4px;
   max-width: 275px;
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .tags-hero-btn {
@@ -144,7 +147,7 @@
     width: 550px;
   }
   .container-tags-hero {
-    margin: 0 -34px 32px 462px;
+    /* margin: 0 -34px 32px 462px; */
   }
 }
 
@@ -186,7 +189,7 @@
     gap: 8px;
   }
   .container-tags-hero {
-    margin: 60px 30px 32px 140px;
+    /* margin: 60px 30px 32px 140px; */
   }
   .container-hero {
     display: flex;
