@@ -37,16 +37,35 @@
               <p>Plant</p>
             </div>
             <div class="form-items-img">
-              <img
-                srcset="
-                  ./img/modal/cabbage.png    1x,
-                  ./img/modal/cabbage-2x.png 2x
-                "
-                src="/img/modal/cabbage.png"
-                alt="Cabbage Basket"
-                width="94"
-                height="78"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/cabbage-modal.png    1x,
+                    /img/mobile/cabbage-modal@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/cabbage-modal.png    1x,
+                    /img/tablet/cabbage-modal@2x.png 2x
+                  "
+                  media="(max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/cabbage-modal.png    1x,
+                    /img/desktop/cabbage-modal@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <img
+                  src="/img/mobile/cabbage-modal.png"
+                  alt="Cabbage"
+                  width="94"
+                  height="78"
+                />
+              </picture>
             </div>
           </div>
 
@@ -71,13 +90,35 @@
               <p>Plant</p>
             </div>
             <div class="form-items-img">
-              <img
-                srcset="/img/modal/tomato.png 1x, /img/modal/tomato-2x.png 2x"
-                src="/img/modal/tomato.png"
-                alt="Tomato Basket"
-                width="94"
-                height="78"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/tomato-modal.png    1x,
+                    /img/mobile/tomato-modal@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/tomato-modal.png    1x,
+                    /img/tablet/tomato-modal@2x.png 2x
+                  "
+                  media="(max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/tomato-modal.png    1x,
+                    /img/desktop/tomato-modal@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <img
+                  src="/img/mobile/tomato-modal.png"
+                  alt="Tomato Basket"
+                  width="94"
+                  height="78"
+                />
+              </picture>
             </div>
           </div>
 
@@ -102,16 +143,35 @@
               <p>Plant</p>
             </div>
             <div class="form-items-img">
-              <img
-                srcset="
-                  /img/modal/vegetables.png    1x,
-                  /img/modal/vegetables-2x.png 2x
-                "
-                src="/img/modal/vegetables.png"
-                alt="Vegetables Basket"
-                width="94"
-                height="78"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /img/mobile/vegetables-modal.png    1x,
+                    /img/mobile/vegetables-modal@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    /img/tablet/vegetables-modal.png    1x,
+                    /img/tablet/vegetables-modal@2x.png 2x
+                  "
+                  media="(max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    /img/desktop/vegetables-modal.png    1x,
+                    /img/desktop/vegetables-modal@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                />
+                <img
+                  src="/img/mobile/vegetables-modal.png"
+                  alt="Vegetables"
+                  width="94"
+                  height="78"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -163,14 +223,33 @@
       <button class="modal-button" type="submit">
         <span class="modal-btn-txt">Submit</span>
       </button>
-      <img
-        class="img-girl"
-        srcset="/img/modal/img-girl.png 1x, /img/modal/img-girl-2x.png 2x"
-        src="/img/modal/img-girl.png"
-        alt="Cabbage Basket"
-        width="290"
-        height="403"
-      />
+
+      <picture class="img-girl">
+        <source
+          srcset="
+            /img/tablet/modal-girl.png    1x,
+            /img/tablet/modal-girl@2x.png 2x
+          "
+          media="(max-width:1279px)"
+          width="290"
+          height="403"
+        />
+        <source
+          srcset="
+            /img/desktop/modal-girl.png    1x,
+            /img/desktop/modal-girl@2x.png 2x
+          "
+          media="(min-width:1280px)"
+          width="444"
+          height="413"
+        />
+        <img
+          src="/img/tablet/modal-girl.png"
+          alt="Girl Photo"
+          width="290"
+          height="403"
+        />
+      </picture>
     </form>
   </div>
 </div>
