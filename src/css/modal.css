@@ -242,9 +242,9 @@
   .img-girl {
     display: inline;
     position: absolute;
-    width: 444px;
-    bottom: -10px;
-    right: -154px;
+    /* width: 444px; */
+    bottom: 0px;
+    right: 0px;
   }
   .form-items-checkbox {
     flex-direction: column;
@@ -279,7 +279,7 @@
 
 @media screen and (min-width: 1280px) {
   .img-girl {
-    bottom: 3px;
+    bottom: -3px;
     right: 7px;
   }
 
