@@ -67,7 +67,7 @@
   width: 370px;
 }
 .container-tags-hero {
-  /* margin: 0px -23px 20px 142px; */
+  /* margin: 0px 0px 0 142px; */
   display: flex;
   justify-content: flex-end;
 }
@@ -78,6 +78,8 @@
   gap: 4px;
   max-width: 275px;
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .tags-hero-btn {
