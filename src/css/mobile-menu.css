@@ -13,13 +13,13 @@ header {
   background: #a1c487;
   transform: translateX(-100%);
   transition: transform 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1;
-}
 
+  z-index: 1;
+  overflow: auto;
+}
+.menu-wrap {
+  margin-top: 174px;
+}
 .menu.active {
   transform: translateX(0);
 }
@@ -30,7 +30,6 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  padding: 174px 140px 512px 140px;
 }
 .button-mobile-menu {
   outline: none;
