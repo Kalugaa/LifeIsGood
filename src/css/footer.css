@@ -37,7 +37,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.04em;
   text-transform: uppercase;
   align-items: center;
   row-gap: 40px;
@@ -77,7 +77,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.04em;
   display: flex;
   gap: 20px;
 }
@@ -195,7 +195,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
   }
 
   .footer-address-link {
