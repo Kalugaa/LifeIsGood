@@ -15,6 +15,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .footer-img {
   display: flex;
   border-radius: 100px;
@@ -40,6 +41,21 @@
   text-transform: uppercase;
   align-items: center;
   row-gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--green-color);
+}
+
+.footer-logo:hover svg,
+.footer-logo:focus svg {
+  fill: var(--green-color);
+}
+
+.footer-logo svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-svg-logo {
   margin-right: 8px;
@@ -68,11 +84,11 @@
 .footer-item {
 }
 .footer-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--green-color);
-  fill: var(--green-color);
 }
 .footer-div-soc {
   display: block;
@@ -92,11 +108,11 @@
   height: 40px;
   border-radius: 10px;
   border: 1px solid #141414;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-svg-soc:hover,
 .footer-svg-soc:focus {
   fill: var(--green-color);
-  border: 1px solid var(--green-color);
 }
 
 .footer-div-address {
@@ -125,6 +141,7 @@
 .footer-tel {
 }
 .footer-tel-linc {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 20px;
 }
 .footer-address-link {
@@ -134,6 +151,7 @@
   justify-content: center;
 }
 .foooter-address-poht {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 135px;
   height: 54px;
   margin-top: 20px;
