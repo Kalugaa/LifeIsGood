@@ -17,10 +17,26 @@ header {
   z-index: 1;
   overflow: auto;
 }
+
+.modal-close-btn {
+  position: absolute;
+  content: '';
+  top: 18px;
+  right: 50px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-burger-close {
+  stroke: white;
+  border: 3px solid white;
+  border-radius: 50%;
+}
 .menu-wrap {
   margin-top: 174px;
 }
-.menu.active {
+.menu.is-open {
   transform: translateX(0);
 }
 

@@ -1,36 +1,27 @@
-let menuBtn = document.querySelector('.mobile-burger-icon');
-let menu = document.querySelector('.menu');
-let links = document.querySelectorAll('.mobile-list a');
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
 
-// Функція для скидання стану кнопки меню до початкового стану
-function resetMenuButton() {
-  menuBtn.classList.remove('active');
-  menuBtn.innerHTML = `
-    <svg class="mobile-burger-icon" id="icon" width="24" height="24">
-      <use href="../img/symbol-defs.svg#mobile-burger-icon"></use>
-    </svg>`;
-  document.body.style.overflow = ''; // Відновлення прокрутки
-}
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
 
-menuBtn.addEventListener('click', function () {
-  menuBtn.classList.toggle('active');
-  menu.classList.toggle('active');
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+  };
 
-  if (menuBtn.classList.contains('active')) {
-    menuBtn.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M18 6L6 18" stroke="#77AC63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M6 6L18 18" stroke="#77AC63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>`;
-    document.body.style.overflow = 'hidden'; // Блокування прокрутки
-  } else {
-    resetMenuButton();
-  }
-});
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
 
-// Додаємо обробники подій до кожного посилання
-links.forEach(function (link) {
-  link.addEventListener('click', function () {
-    resetMenuButton();
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
   });
-});
+})();
