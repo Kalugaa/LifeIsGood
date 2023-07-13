@@ -52,7 +52,15 @@
 }
 
 .header-mobile-burger {
-  display: none;
+  background-image: url('../img/menu-burger.svg');
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #fff;
+}
+
+.header-mobile-burger[aria-expanded='true'] {
+  background-image: url('../img/menu-cross.svg');
 }
 
 @media screen and (min-width: 375px) {
@@ -62,10 +70,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header-mobile-burger {
-    all: unset;
-  }
-
   .mobile-burger-icon {
     fill: #77ac63;
   }
@@ -83,6 +87,9 @@
   .header-container a {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .header-mobile-burger {
+    display: none;
   }
 
   .cart {
