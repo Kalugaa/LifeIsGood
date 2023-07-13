@@ -553,13 +553,26 @@
   <div class="footer-container container">
     <div class="footer-div-item">
       <div class="footer-div-logo">
-        <img
-          src="/LifeIsGood/assets/footer-vege-c4a8925e.png"
-          alt="cauliflover"
-          class="footer-img"
-          width="335"
-          height="172"
-        />
+        <picture>
+          <source
+            srcset="/LifeIsGood/assets/footer-vege-c4a8925e.png 1x, /LifeIsGood/assets/footer-vege@2x-d9f691a3.png 2x"
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="/LifeIsGood/assets/footer-vege-e7757c53.png 1x, /LifeIsGood/assets/footer-vege@2x-6ba0d7ab.png 2x"
+            media="(max-width:1279px)"
+          />
+          <source
+            srcset="/LifeIsGood/assets/footer-vege-c6309e4c.png 1x, /LifeIsGood/assets/footer-vege@2x-f9dbabc2.png 2x"
+            media="(min-width:1280px)"
+          />
+          <img
+            src="/LifeIsGood/assets/footer-vege-c4a8925e.png"
+            alt="cauliflover"
+            width="335"
+            height="172"
+          />
+        </picture>
 
         <a href="./index.html" class="footer-logo">
           <svg class="footer-svg-logo" width="16" height="16">
@@ -600,8 +613,9 @@
         <li class="footer-item-soc">
           <a class="footer-soc-link" aria-label="youtube-icon">
             <svg class="footer-svg-soc" width="24" height="24">
-              <use href="/LifeIsGood/assets/symbol-defs-029a81f6.svg#youtube-icon"></use></svg
-          ></a>
+              <use href="/LifeIsGood/assets/symbol-defs-029a81f6.svg#youtube-icon"></use>
+            </svg>
+          </a>
         </li>
       </ul>
 
