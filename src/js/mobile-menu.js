@@ -7,7 +7,7 @@ function resetMenuButton() {
   menuBtn.classList.remove('active');
   menuBtn.innerHTML = `
     <svg class="mobile-burger-icon" id="icon" width="24" height="24">
-      <use href="/img/symbol-defs.svg#mobile-burger-icon"></use>
+      <use href="../img/symbol-defs.svg#mobile-burger-icon"></use>
     </svg>`;
   document.body.style.overflow = ''; // Відновлення прокрутки
 }
