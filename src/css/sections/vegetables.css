@@ -11,7 +11,6 @@
 
 .vegetables-title {
   text-align: center;
-
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -65,14 +64,14 @@
 }
 
 .vegetables-item-title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.04em;
 }
 
 .vegetables-item-paragraph {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.02em;
@@ -143,6 +142,14 @@
     line-height: 1.14;
   }
 
+  .vegetables-item-title {
+    font-size: 28px;
+  }
+
+  .vegetables-item-paragraph {
+    font-size: 18px;
+  }
+
   .vegetables-paragraph {
     font-size: 18px;
     line-height: 1.33;
@@ -193,6 +200,10 @@
   .vegetables-list {
     gap: 24px;
     margin-bottom: 40px;
+  }
+
+  .vegetables-item-title {
+    font-size: 38px;
   }
 
   .vegetables-item {
