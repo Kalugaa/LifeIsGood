@@ -2,13 +2,35 @@
   <div class="footer-container container">
     <div class="footer-div-item">
       <div class="footer-div-logo">
-        <img
-          src="./img/mobile/footer-vege.png"
-          alt="cauliflover"
-          class="footer-img"
-          width="335"
-          height="172"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/mobile/footer-vege.png    1x,
+              /img/mobile/footer-vege@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+              /img/tablet/footer-vege.png    1x,
+              /img/tablet/footer-vege@2x.png 2x
+            "
+            media="(max-width:1279px)"
+          />
+          <source
+            srcset="
+              /img/desktop/footer-vege.png    1x,
+              /img/desktop/footer-vege@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <img
+            src="/img/mobile/footer-vege.png"
+            alt="cauliflover"
+            width="335"
+            height="172"
+          />
+        </picture>
 
         <a href="./index.html" class="footer-logo">
           <svg class="footer-svg-logo" width="16" height="16">
@@ -49,8 +71,9 @@
         <li class="footer-item-soc">
           <a class="footer-soc-link" aria-label="youtube-icon">
             <svg class="footer-svg-soc" width="24" height="24">
-              <use href="./img/symbol-defs.svg#youtube-icon"></use></svg
-          ></a>
+              <use href="./img/symbol-defs.svg#youtube-icon"></use>
+            </svg>
+          </a>
         </li>
       </ul>
 
